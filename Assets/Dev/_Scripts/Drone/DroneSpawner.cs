@@ -15,16 +15,18 @@ public class DroneSpawner : IDroneSpawner
     {
         for (int i = 0; i < dronesPerFaction; i++)
         {
-            CreateDroneAtBase(blueBase);
-            CreateDroneAtBase(redBase);
+            CreateDroneAtBase(blueBase, true);
+        }
+
+        for (int i = 0; i < dronesPerFaction; i++)
+        {
+            CreateDroneAtBase(redBase, false);
         }
     }
 
-    private void CreateDroneAtBase(IBase homeBase)
+    private void CreateDroneAtBase(IBase homeBase, bool isTeamA)
     {
-        IDrone drone = _factory.Create(homeBase);
-        // Больше не нужно явно вызывать SetResourceProvider,
-        // так как он устанавливается в Initialize
+        IDrone drone = _factory.Create(homeBase, isTeamA);
 
         if (drone is MonoBehaviour mono)
         {

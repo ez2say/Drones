@@ -1,4 +1,4 @@
 public interface IDroneFactory
 {
-    IDrone Create(IBase homeBase);
+    IDrone Create(IBase homeBase, bool isTeamA);
 }

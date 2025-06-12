@@ -14,12 +14,14 @@ public class DroneGameSettingsSO : ScriptableObject
     [Header("Базы")]
     public GameObject blueBasePrefab;
     public GameObject redBasePrefab;
-    public TMP_Text base1Text;
-    public TMP_Text base2Text;
 
     [Header("Позиции")]
     public GameObject blueBaseSpawnPoint;
     public GameObject redBaseSpawnPoint;
+
+    [Header("Team Colors")]
+    public Color teamAColor = Color.blue;
+    public Color teamBColor = Color.red;
 
     [Header("Ресурсы")]
     public GameObject resourcePrefab;

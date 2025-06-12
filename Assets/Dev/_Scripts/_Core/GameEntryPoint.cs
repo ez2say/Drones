@@ -20,6 +20,7 @@ public class EntryPoint : MonoBehaviour
 
     private void StartGame(DroneGameSettingsSO settings)
     {
+
         IBase blueBase = StartBlueBase(settings);
         IBase redBase = StartRedBase(settings);
 
@@ -35,7 +36,7 @@ public class EntryPoint : MonoBehaviour
     private void CreateComponents(DroneGameSettingsSO settings, IDronePrototype droneProto, IResourcePrototype resourceProto)
     {
         _resourceProvider = new SimpleResourceProvider();
-        _droneFactory = new DroneFactory(droneProto, _resourceProvider, settings.droneSpeed);
+        _droneFactory = new DroneFactory(droneProto, _resourceProvider, settings.droneSpeed,settings.teamAColor,settings.teamBColor);
         _droneSpawner = new DroneSpawner(_droneFactory, _resourceProvider);
 
         _resourceSpawner = new ResourceSpawner(
