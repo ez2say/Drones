@@ -118,4 +118,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78fa3bf37dc4fe4469ea311c7ea3b366, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ResourceText: {fileID: 8497189801302393451, guid: ef3ad164573d1c04ca0de94df08062e7, type: 3}
+  _deliveryParticlePrefab: {fileID: 60296174314390686, guid: a60252fbc4a519b48b3cebc75370f084, type: 3}

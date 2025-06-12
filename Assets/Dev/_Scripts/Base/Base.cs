@@ -6,6 +6,8 @@ public class Base : MonoBehaviour, IBase
     public Vector3 Position => transform.position;
     public int ResourceCount => _resourceCount;
 
+    [SerializeField] private ParticleSystem _deliveryParticlePrefab;
+
     private Renderer _baseRenderer;
     private TMP_Text _resourcesText;
     private int _resourceCount;
@@ -26,6 +28,7 @@ public class Base : MonoBehaviour, IBase
     public void AddResource()
     {
         _resourceCount++;
+        Instantiate(_deliveryParticlePrefab, Position, Quaternion.identity);
         UpdateResourcesUI();
     }
 
