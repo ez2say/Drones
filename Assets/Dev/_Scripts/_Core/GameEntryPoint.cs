@@ -57,7 +57,7 @@ public class EntryPoint : MonoBehaviour
         IBase redBase = redBaseObj.GetComponent<IBase>();
         if (redBase is Base baseImpl2)
         {
-            baseImpl2.Initialize(base2Text);
+            baseImpl2.Initialize(base2Text,settings.teamBColor);
         }
 
         return redBase;
@@ -73,7 +73,7 @@ public class EntryPoint : MonoBehaviour
 
         if (blueBase is Base baseImpl)
         {
-            baseImpl.Initialize(base1Text);
+            baseImpl.Initialize(base1Text,settings.teamAColor);
         }
 
         return blueBase;
