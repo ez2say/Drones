@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a9042e7c6ca9d54fba559551264f1c8, type: 3}
+  m_Name: DroneGameSettings
+  m_EditorClassIdentifier: 
+  showPaths: 0
+  dronePrefab: {fileID: 3481428370408725168, guid: 1c7bdd9316b97f547854bc4f62b5b499, type: 3}
+  dronesPerFaction: 4
+  droneSpeed: 5
+  blueBasePrefab: {fileID: 1894962350905907143, guid: e12dbec5d9adfe448b37b14c927f7d05, type: 3}
+  redBasePrefab: {fileID: 6886106337510440452, guid: c6472f52836367e4ebb214602ee757cb, type: 3}
+  base1Text: {fileID: 4423768285814993468, guid: 1b18ecd5c922b5b498cf2e076764c219, type: 3}
+  base2Text: {fileID: 8497189801302393451, guid: ef3ad164573d1c04ca0de94df08062e7, type: 3}
+  blueBaseSpawnPoint: {fileID: 5235639475332962808, guid: 2ee86ea457742204cb0d8be3842796d2, type: 3}
+  redBaseSpawnPoint: {fileID: 2873057868951526776, guid: 12ad3e352b6e4664588916172c794c77, type: 3}
+  resourcePrefab: {fileID: 4609682945270411771, guid: de814833b49c16f4280bbd68a122bdaa, type: 3}
+  spawnAreaMin: {x: -10, y: -10}
+  spawnAreaMax: {x: 10, y: 10}
+  resourceSpawnInterval: 2
